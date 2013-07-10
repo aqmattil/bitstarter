@@ -6,7 +6,7 @@ var fs = require('fs');
 
 app.get('/', function(request, response) {
   var text = fs.readFile("index.html");
-  buf = new Buffer(text.length);
+  var buf = new Buffer(text.length);
   response.send(buf.toString());
 
 });
